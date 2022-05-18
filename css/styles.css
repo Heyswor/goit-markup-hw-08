@@ -5,13 +5,25 @@
   --discription-color: #757575;
 }
 
-
 body {
   font-family: "Roboto", sans-serif;
   color: #212121;
   background-color: #ffffff;
   font-size: 14px;
   letter-spacing: 0.03em;
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
 }
 
 /*-----------------------------------------HEADER-----------------------------------------*/
@@ -42,8 +54,7 @@ body {
 }
 
 .nav_logo {
-  font-family: "Raleway";
-  font-style: normal;
+  font-family: "Raleway"; 
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
@@ -303,6 +314,7 @@ body {
 }
 
 .footer_logo {
+  font-family: "Raleway";
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
