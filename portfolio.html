@@ -11,18 +11,24 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./css/normalize.css" />
     <link rel="stylesheet" href="./css/styles.css" />
+
     <title>Портфолио</title>
   </head>
   <body>
-    <header class="header">
+    <header class="header container">
       <nav>
-        <a href="index.html" class="nav_logo"
-          >Web<span class="nav_logo_2">Studio</span></a
-        >
+        <div class="logo_style">
+          <a href="index.html" class="nav_logo"
+            >Web<span class="nav_logo_2">Studio</span></a
+          >
+        </div>
         <ul class="nav">
           <li class="nav_li_1"><a href="index.html">Студия</a></li>
-          <li class="nav_li_2"><a href="portfolio.html">Портфолио</a></li>
+          <li class="nav_li_2">
+            <a href="portfolio.html" class="active-portfolio">Портфолио</a>
+          </li>
           <li class="nav_li_3"><a href="">Контакты</a></li>
         </ul>
       </nav>
@@ -36,8 +42,8 @@
       </ul>
     </header>
     <main>
-      <section>
-        <h1 hidden>Наши работы</h1>
+      <section class="container section">
+        <h1 class="visually-hidden">Наши работы</h1>
         <ul class="portfolio_buttons">
           <li><button type="button">Все</button></li>
           <li><button type="button">Веб-сайты</button></li>
@@ -153,7 +159,7 @@
         </ul>
       </section>
     </main>
-    <footer class="footer">
+    <footer class="footer container">
       <a href="index.html" class="footer_logo"
         >Web<span class="footer_logo_2">Studio</span></a
       >
