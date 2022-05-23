@@ -55,7 +55,6 @@ html {
 
 .container {
   width: 1200px;
-
   padding-left: 15px;
   padding-right: 15px;
 }
@@ -237,7 +236,7 @@ html {
   font-size: 36px;
   line-height: 1.17;
   letter-spacing: 0.03em;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
   padding-left: 453px;
   padding-right: 453px;
 }
@@ -248,8 +247,14 @@ html {
   max-width: 270px;
 }
 
-.our_team_list li:not(:last-child) { 
-  padding-right: 30px;
+.our_team_list li {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.our_team_list li:not(:last-child) {
+  margin-right: 30px;
 }
 
 .our_team_list h3 {
@@ -267,9 +272,6 @@ html {
   text-align: center;
   color: var(--discription-color);
   padding: 0px 61px 30px 62px;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 0px 0px 4px 4px;
 }
 
 /*-----------------------------------------PORTFOLIO-----------------------------------------*/
@@ -312,8 +314,6 @@ html {
   columns: 3;
   list-style-type: none;
   border-bottom: 1px solid #eeeeee;
-  margin-top: 0px;
-  margin-bottom: 0px;
 }
 
 .presentation a {
@@ -337,8 +337,6 @@ html {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  margin-top: 0px;
-  margin-bottom: 0px;
   padding-top: 20px;
   padding-left: 24px;
   padding-right: 24px;
@@ -352,8 +350,6 @@ html {
   padding-left: 24px;
   padding-right: 24px;
   padding-bottom: 20px;
-  margin-top: 0px;
-  margin-bottom: 0px;
 }
 
 /*-----------------------------------------FOOTER-----------------------------------------*/
