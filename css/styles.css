@@ -53,7 +53,7 @@ html {
 .header {
   display: inline-flex;
   padding: 24px 200px 25px 200px;
-  border-bottom: 1px solid #ECECEC;
+  border-bottom: 1px solid #ececec;
 }
 
 .logo_style {
@@ -298,7 +298,7 @@ html {
 }
 
 .portfolio_buttons button:not(:last-child) {
-  margin-right: 8px;
+  padding-right: 8px;
 }
 
 .portfolio_buttons button:hover,
@@ -324,18 +324,35 @@ html {
 }
 
 .presentation li {
+  width: 370px;
+}
+
+.presentation li {
+  padding-right: 30px;
+  padding-bottom: 30px;
 }
 
 .presentation h2 {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-top: 20px;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-bottom: 4px;
 }
 
 .presentation p {
   font-size: 16px;
   line-height: 1.87;
   color: var(--discription-color);
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-bottom: 20px;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
 /*-----------------------------------------FOOTER-----------------------------------------*/
