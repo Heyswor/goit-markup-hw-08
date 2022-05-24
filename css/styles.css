@@ -7,6 +7,7 @@
   --second-back-color: #2f303a;
   --main-back-color: #ffffff;
   --second-logo-color: #000000;
+  --border-color: #eeeeee;
 }
 
 body {
@@ -32,11 +33,9 @@ ol {
   padding-left: 0px;
 }
 
-/* * {
-  outline: 5px solid tomato;
-} */
-
-html {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -57,25 +56,20 @@ html {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  margin: 0 auto;
 }
 
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
-  padding-right: 200px;
-  padding-left: 200px;
 }
 
 /*-----------------------------------------HEADER-----------------------------------------*/
 .header {
-  display: inline-flex;
-  padding: 24px 200px 25px 200px;
+  display: flex;
   border-bottom: 1px solid #ececec;
-}
-
-.logo_style {
-  display: inline-flex;
-  padding-right: 93px;
 }
 
 .nav_logo {
@@ -86,6 +80,10 @@ html {
   letter-spacing: 0.03em;
   color: var(--accent-color);
   text-decoration: none;
+  padding-top: 24px;
+  padding-bottom: 25px;
+  margin-right: 93px;
+  display: inline-flex;
 }
 
 .nav_logo_2 {
@@ -95,8 +93,8 @@ html {
 .nav {
   list-style-type: none;
   display: inline-flex;
-  padding-right: 331px;
   padding-top: 8px;
+  margin-right: 324px;
 }
 
 .nav li:not(:last-child) {
@@ -109,6 +107,8 @@ html {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .nav a:hover,
@@ -136,6 +136,8 @@ html {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .contacts a:hover,
@@ -143,17 +145,15 @@ html {
   color: var(--accent-color);
 }
 
-.head_mail {
-  padding-right: 50px;
+.contacts li:not(:last-child) {
+  margin-right: 50px;
 }
 
 /*-----------------------------------------STUDIO-----------------------------------------*/
 
 .main_title {
   background: var(--second-back-color);
-  display: flexbox;
-  padding: 200px 452px;
-  width: 696px;
+  padding: 200px;
 }
 
 .main_title_head {
@@ -174,7 +174,6 @@ html {
   outline: none;
   border: none;
   cursor: pointer;
-  margin: 0px 248px 0px 248px;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
@@ -182,7 +181,8 @@ html {
   letter-spacing: 0.06em;
   color: var(--text-color);
   padding: 10px 32px 10px 32px;
-  white-space: nowrap;
+  margin: 0 auto;
+  display: block;
 }
 
 .skills_li {
@@ -191,7 +191,7 @@ html {
 }
 
 .skills_li li:not(:last-child) {
-  pading-right: 30px;
+  margin-right: 30px;
 }
 
 .skills_li h3 {
@@ -209,6 +209,7 @@ html {
 }
 
 .our_work {
+  padding-top: 0px;
 }
 
 .our_work_head {
@@ -216,8 +217,7 @@ html {
   line-height: 1.17;
   letter-spacing: 0.03em;
   margin-bottom: 50px;
-  padding-left: 397px;
-  padding-right: 397px;
+  text-align: center;
 }
 
 .our_work_list {
@@ -230,6 +230,8 @@ html {
 }
 
 .our_team {
+  padding-top: 0;
+  background: #f5f4fa;
 }
 
 .our_team_head {
@@ -237,14 +239,18 @@ html {
   line-height: 1.17;
   letter-spacing: 0.03em;
   margin-bottom: 50px;
-  padding-left: 453px;
-  padding-right: 453px;
+  text-align: center;
 }
 
 .our_team_list {
   list-style-type: none;
   display: inline-flex;
-  max-width: 270px;
+}
+
+.our_team_list img {
+  display: flex;
+  max-width: 100%;
+  height: auto;
 }
 
 .our_team_list li {
@@ -263,7 +269,8 @@ html {
   line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
-  padding: 30px 80px 10px 81px;
+  margin-top: 30px;
+  margin-bottom: 10px;
 }
 
 .our_team_list p {
@@ -271,28 +278,28 @@ html {
   line-height: 1.18;
   text-align: center;
   color: var(--discription-color);
-  padding: 0px 61px 30px 62px;
+  margin-bottom: 30px;
 }
 
 /*-----------------------------------------PORTFOLIO-----------------------------------------*/
 
 .portfolio_buttons {
   list-style-type: none;
-  display: inline-flex;
-  margin: 0px 279px 50px 280px;
+  display: flex;
+  margin-bottom: 50px;
+  justify-content: center;
 }
 
 .portfolio_buttons button {
+  display: block;
   cursor: pointer;
-  background: var(--main-back-color);
+  background: #f5f4fa;
   border-radius: 4px;
-  margin-right: 8px;
   text-align: center;
   font-family: "Roboto";
   font-weight: 500;
   font-size: 16px;
   line-height: 1.63;
-  text-align: center;
   letter-spacing: 0.03em;
   height: 38px;
   padding: 6px 22px;
@@ -300,8 +307,8 @@ html {
   border: none;
 }
 
-.portfolio_buttons button:not(:last-child) {
-  padding-right: 8px;
+.portfolio_buttons li:not(:last-child) {
+  margin-right: 8px;
 }
 
 .portfolio_buttons button:hover,
@@ -313,7 +320,7 @@ html {
 .presentation {
   columns: 3;
   list-style-type: none;
-  border-bottom: 1px solid #eeeeee;
+  border-bottom: 1px solid var(--border-color);
 }
 
 .presentation a {
@@ -325,39 +332,47 @@ html {
 }
 
 .presentation li {
-  width: 370px;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  margin-right: 30px;
+  margin-bottom: 30px;
 }
 
-.presentation li {
-  padding-right: 30px;
-  padding-bottom: 30px;
+.presentation li:nth-child(n+6) {
+  margin-right: 0px;
+}
+
+.presentation li:nth-child(3n) {
+  margin-bottom: 0px;
+}
+
+.presentation-discription {
+  border-left: 1px solid var(--border-color);
+  border-right: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
+  padding: 20px 24px;
 }
 
 .presentation h2 {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  padding-top: 20px;
-  padding-left: 24px;
-  padding-right: 24px;
-  padding-bottom: 4px;
+  margin-bottom: 4px;
 }
 
 .presentation p {
   font-size: 16px;
   line-height: 1.87;
   color: var(--discription-color);
-  padding-left: 24px;
-  padding-right: 24px;
-  padding-bottom: 20px;
 }
 
 /*-----------------------------------------FOOTER-----------------------------------------*/
 
 .footer {
   background: var(--second-back-color);
-  padding: 60px 1154px 60px 215px;
-  width: 231px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .footer a {
