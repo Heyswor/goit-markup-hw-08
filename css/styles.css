@@ -72,6 +72,10 @@ ol {
   border-bottom: 1px solid #ececec;
 }
 
+.header > div {
+  display: flex;
+}
+
 .nav_logo {
   font-family: "Raleway";
   font-weight: 700;
@@ -93,12 +97,11 @@ ol {
 .nav {
   list-style-type: none;
   display: inline-flex;
-  padding-top: 8px;
-  margin-right: 324px;
+  margin-right: 324px;  
 }
 
 .nav li:not(:last-child) {
-  padding-right: 50px;
+  margin-right: 50px;
 }
 
 .nav a {
@@ -126,7 +129,8 @@ ol {
 
 .contacts {
   list-style-type: none;
-  display: inline-flex;
+  display: flex;
+  align-items: center;
   padding-top: 8px;
 }
 
@@ -339,7 +343,7 @@ ol {
   margin-bottom: 30px;
 }
 
-.presentation li:nth-child(n+6) {
+.presentation li:nth-child(n + 6) {
   margin-right: 0px;
 }
 
