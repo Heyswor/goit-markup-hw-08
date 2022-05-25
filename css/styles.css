@@ -262,7 +262,7 @@ ol {
 }
 
 .our_team_list img {
-  display: flex;
+  display: block;
   max-width: 100%;
   height: auto;
 }
@@ -346,6 +346,8 @@ ol {
 
 .presentation img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .presentation a {
