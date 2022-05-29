@@ -147,19 +147,57 @@ ol {
   padding-bottom: 32px;
 }
 
+
+.contacts a::before {
+  content: "";
+  display: inline-flex;
+  margin-right: 10px;
+  background-color: var(--main-back-color);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+
+}
+
 .contacts a:hover,
 .contacts a:focus {
   color: var(--accent-color);
 }
 
+
 .contacts li:not(:last-child) {
   margin-right: 50px;
+}
+
+.head_mail::before {
+  width: 16px;
+  height: 12px;
+  background-image: url(../images/header-mail.svg);
+
+}
+
+.head_tel::before {
+  width: 10px;
+  height: 16px;
+  background-image: url(../images/header-tel.svg);
 }
 
 /*-----------------------------------------STUDIO-----------------------------------------*/
 
 .main_title {
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
   background: var(--second-back-color);
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/hero_back.jpg);
+  background-position: center;
+  background-size: cover;
   padding-top: 200px;
   padding-bottom: 200px;
 }
@@ -194,12 +232,37 @@ ol {
 }
 
 .skills_li {
-  list-style-type: none;
   display: inline-flex;
 }
 
 .skills_li li:not(:last-child) {
   margin-right: 30px;
+}
+
+.skills_li li::before {
+  content: "";
+  display: block;
+  background-color: #f5f4fa;
+  height: 120px;
+  margin-bottom: 30px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.icon-antenna::before {
+  background-image: url(../images/icon-antenna.svg);
+}
+
+.icon-clock::before {
+  background-image: url(../images/icon-clock.svg);
+}
+
+.icon-diagram::before {
+  background-image: url(../images/icon-diagram.svg);
+}
+
+.icon-astronaut::before {
+  background-image: url(../images/icon-astronaut.svg);
 }
 
 .skills_li h3 {
@@ -245,7 +308,7 @@ ol {
 }
 
 .our_team {
-  background: #F5F4FA;
+  background: #f5f4fa;
 }
 
 .our_team_head {
@@ -257,7 +320,6 @@ ol {
 }
 
 .our_team_list {
-  list-style-type: none;
   display: inline-flex;
 }
 
@@ -267,7 +329,7 @@ ol {
   height: auto;
 }
 
-.our_team_list li {
+.our_team_item {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -284,7 +346,6 @@ ol {
   text-align: center;
   letter-spacing: 0.03em;
   margin-top: 30px;
-  margin-bottom: 10px;
 }
 
 .our_team_list p {
@@ -292,7 +353,62 @@ ol {
   line-height: 1.18;
   text-align: center;
   color: var(--discription-color);
+  margin-top: 10px;
+  margin-bottom: 16px;
+}
+
+.our_team_links_list {
+  display: flex;
+  justify-content: center;
   margin-bottom: 30px;
+}
+
+.our_team_links_list li {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.our_team_links_list li:not(:last-child) {
+  margin-right: 10px;
+}
+
+.clients {
+}
+
+.clients-head {
+  font-size: 36px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.clients-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -30px;
+}
+
+.clients-list a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.clients-list img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  padding: 16px 32px;
+}
+
+.clients-list li {
+  margin-right: 30px;
+  flex-basis: calc((100% - 180px) / 6);
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
 }
 
 /*-----------------------------------------PORTFOLIO-----------------------------------------*/
@@ -394,6 +510,10 @@ ol {
   padding-bottom: 60px;
 }
 
+.footer > .container {
+  display: flex;
+}
+
 .footer a {
   text-decoration: none;
 }
@@ -412,7 +532,6 @@ ol {
 }
 
 .address_list {
-  list-style-type: none;
   margin-top: 20px;
   margin-bottom: 0px;
 }
@@ -444,5 +563,48 @@ ol {
 
 .contacts_footer a:hover,
 .contacts_footer a:focus {
+  color: var(--accent-color);
+}
+
+.footer-social-links {
+  margin-left: 70px;
+  margin-top: 12px;
+}
+
+.footer-head {
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--text-color);
+  margin-bottom: 20px;
+}
+
+.footer-list {
+  display: inline-flex;
+}
+
+.footer-list img {
+  display: block;
+}
+
+.footer-list li:not(:last-child) {
+  margin-right: 10px;
+}
+
+.footer-list li {
+  width: 44px;
+  height: 44px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-list li:hover,
+.footer-list li:focus {
+  background-color: var(--accent-color);
   color: var(--accent-color);
 }
