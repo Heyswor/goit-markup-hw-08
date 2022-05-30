@@ -137,7 +137,7 @@ ol {
   margin-left: auto;
 }
 
-.contacts a {
+.head-link {
   text-decoration: none;
   color: var(--address-color);
   font-weight: 500;
@@ -145,41 +145,31 @@ ol {
   letter-spacing: 0.02em;
   padding-top: 32px;
   padding-bottom: 32px;
-}
-
-
-.contacts a::before {
-  content: "";
   display: inline-flex;
-  margin-right: 10px;
-  background-color: var(--main-back-color);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-
+  justify-content: center;
 }
 
-.contacts a:hover,
-.contacts a:focus {
+.head_mail {
+  margin-right: 10px;
+  fill: currentColor;
+  width: 16px;
+  height: 12px;
+}
+
+.head_tel {
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+.head-link:hover,
+.head-link:focus {
   color: var(--accent-color);
 }
 
-
 .contacts li:not(:last-child) {
   margin-right: 50px;
-}
-
-.head_mail::before {
-  width: 16px;
-  height: 12px;
-  background-image: url(../images/header-mail.svg);
-
-}
-
-.head_tel::before {
-  width: 10px;
-  height: 16px;
-  background-image: url(../images/header-tel.svg);
 }
 
 /*-----------------------------------------STUDIO-----------------------------------------*/
@@ -239,7 +229,20 @@ ol {
   margin-right: 30px;
 }
 
-.skills_li li::before {
+.icon-block {
+  width: 270px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.skills-icon {
+  width: 70px;
+  height: 70px;
+}
+
+/* .skills_li li::before {
   content: "";
   display: block;
   background-color: #f5f4fa;
@@ -263,7 +266,7 @@ ol {
 
 .icon-astronaut::before {
   background-image: url(../images/icon-astronaut.svg);
-}
+} */
 
 .skills_li h3 {
   font-size: 14px;
@@ -271,6 +274,7 @@ ol {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   margin-bottom: 10px;
+  margin-top: 30px;
 }
 
 .skills_li p {
@@ -363,12 +367,26 @@ ol {
   margin-bottom: 30px;
 }
 
-.our_team_links_list li {
+.our_team_links_list a {
   width: 44px;
   height: 44px;
   display: flex;
   align-items: center;
   justify-content: center;
+  border-radius: 50%;
+  color: #afb1b8;
+}
+
+.our_team_links_list .icon {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+
+.our_team_links_list a:hover {
+  background-color: #2196f3;
+  color: #ffffff;
+  border-radius: 50%;
 }
 
 .our_team_links_list li:not(:last-child) {
@@ -388,27 +406,25 @@ ol {
 
 .clients-list {
   display: flex;
-  flex-wrap: wrap;
-  margin-right: -30px;
+  flex-wrap: nowrap;
+  justify-content: center;
 }
 
-.clients-list a {
-  text-decoration: none;
-  cursor: pointer;
-}
-
-.clients-list img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-  padding: 16px 32px;
-}
-
-.clients-list li {
+.clients-list li:not(:last-child) {
   margin-right: 30px;
-  flex-basis: calc((100% - 180px) / 6);
+}
+
+.client-s {
   border: 1px solid #afb1b8;
   border-radius: 4px;
+  width: 170px;
+  height: 92px;
+  fill: #afb1b8;
+}
+
+.client-s:hover {
+  fill: var(--accent-color);
+  border: 1px solid var(--accent-color);
 }
 
 /*-----------------------------------------PORTFOLIO-----------------------------------------*/
@@ -458,6 +474,11 @@ ol {
   margin-right: 30px;
   margin-bottom: 30px;
   flex-basis: calc((100% - 90px) / 3);
+}
+
+.presentation li:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .presentation img {
@@ -584,27 +605,29 @@ ol {
   display: inline-flex;
 }
 
-.footer-list img {
-  display: block;
+.footer-list a {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: #ffffff;
+  background-color: #43444d;
+}
+
+.footer-list .icon {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+
+.footer-list a:hover {
+  background-color: #2196f3;
+  color: #ffffff;
+  border-radius: 50%;
 }
 
 .footer-list li:not(:last-child) {
   margin-right: 10px;
-}
-
-.footer-list li {
-  width: 44px;
-  height: 44px;
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 50%;
-  cursor: pointer;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.footer-list li:hover,
-.footer-list li:focus {
-  background-color: var(--accent-color);
-  color: var(--accent-color);
 }
