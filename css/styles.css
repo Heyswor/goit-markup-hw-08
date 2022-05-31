@@ -153,13 +153,9 @@ ol {
 .head_mail {
   margin-right: 10px;
   fill: currentColor;
-  width: 16px;
-  height: 12px;
 }
 
 .head_tel {
-  width: 10px;
-  height: 16px;
   margin-right: 10px;
   fill: currentColor;
 }
@@ -238,37 +234,6 @@ ol {
   align-items: center;
   justify-content: center;
 }
-
-.skills-icon {
-  width: 70px;
-  height: 70px;
-}
-
-/* .skills_li li::before {
-  content: "";
-  display: block;
-  background-color: #f5f4fa;
-  height: 120px;
-  margin-bottom: 30px;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.icon-antenna::before {
-  background-image: url(../images/icon-antenna.svg);
-}
-
-.icon-clock::before {
-  background-image: url(../images/icon-clock.svg);
-}
-
-.icon-diagram::before {
-  background-image: url(../images/icon-diagram.svg);
-}
-
-.icon-astronaut::before {
-  background-image: url(../images/icon-astronaut.svg);
-} */
 
 .skills_li h3 {
   font-size: 14px;
@@ -380,8 +345,6 @@ ol {
 }
 
 .our_team_links_list .icon {
-  width: 20px;
-  height: 20px;
   fill: currentColor;
 }
 
@@ -421,8 +384,6 @@ ol {
   display: flex;
   border: 1px solid #afb1b8;
   border-radius: 4px;
-  width: 170px;
-  height: 92px;
   fill: #afb1b8;
   color: #2196f3;
 }
@@ -627,8 +588,6 @@ ol {
 }
 
 .footer-list .icon {
-  width: 20px;
-  height: 20px;
   fill: currentColor;
 }
 
