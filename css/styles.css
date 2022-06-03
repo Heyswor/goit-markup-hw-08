@@ -254,14 +254,14 @@ ol {
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.2);
-  opacity: 1;
+  opacity: 1; 
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .backdrop.is-hidden {
   opacity: 0;
   pointer-events: none;
-  visibility: hidden;
+  visibility: hidden; 
 }
 
 .backdrop.is-hidden .modal {
@@ -550,6 +550,7 @@ ol {
 
 .pres-about-technokriak {
   position: relative;
+  overflow: hidden;
 }
 
 .about-technokriak {
@@ -571,8 +572,8 @@ ol {
   opacity: 0;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
     opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    pointer-events: none;
-}
+  pointer-events: none;
+  }
 
 .presentation a:hover .about-technokriak,
 .presentation a:focus .about-technokriak {
@@ -584,7 +585,6 @@ ol {
   margin-right: 30px;
   margin-bottom: 30px;
   flex-basis: calc((100% - 90px) / 3);
-  overflow: hidden;
 }
 
 .presentation a:hover,
