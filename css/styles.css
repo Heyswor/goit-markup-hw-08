@@ -152,7 +152,7 @@ ol {
   left: 0;
   content: "";
   background: var(--accent-color);
-  border: 2px;
+  border-radius: 2px;
   height: 4px;
   width: 100%;
 }
