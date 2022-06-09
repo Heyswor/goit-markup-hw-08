@@ -276,6 +276,7 @@ ol {
   left: 50%;
   min-width: 528px;
   min-height: 581px;
+  padding: 40px;
   background: var(--main-back-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -290,6 +291,7 @@ ol {
   right: 8px;
   width: 30px;
   height: 30px;
+  background-color: transparent;
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
   padding: 0;
@@ -314,7 +316,6 @@ ol {
   width: 448px;
   display: flex;
   justify-content: center;
-  margin: 0 auto;
 }
 
 .m-icon {
@@ -327,11 +328,11 @@ ol {
 }
 
 .modal-head {
+  font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
   text-align: center;
   color: #212121;
-  margin-top: 40px;
   margin-bottom: 12px;
 }
 
@@ -424,8 +425,6 @@ ol {
   opacity: 0;
 }
 
-
-
 .checkbox-icon {
   position: absolute;
   left: 0px;
@@ -446,8 +445,6 @@ ol {
 .checkbox input[type="checkbox"]:checked + .checkbox-icon {
 }
 
-
-
 .modal-terms {
   line-height: 1.71;
   color: var(--accent-color);
@@ -467,7 +464,6 @@ ol {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   cursor: pointer;
-  margin-bottom: 40px;
 }
 
 .skills_li {
