@@ -11,12 +11,12 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/normalize.css" />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <!-- <link rel="stylesheet" href="./css/normalize.css" /> -->
+    <link rel="stylesheet" href="./css/main.min.css" />
     <title>Портфолио</title>
   </head>
   <body>
-       <header class="header">
+    <header class="header">
       <div class="container">
         <nav class="navigation">
           <a href="index.html" class="navigation__logo"
@@ -26,8 +26,14 @@
             <li class="navigation__item studioPage">
               <a href="index.html" class="navigation__link">Студия</a>
             </li>
-            <li class="navigation__item portfolioPage"><a href="portfolio.html" class="active-portfolio navigation__link">Портфолио</a></li>
-            <li class="navigation__item contactsPage"><a href="" class="navigation__link">Контакты</a></li>
+            <li class="navigation__item portfolioPage">
+              <a href="portfolio.html" class="active-portfolio navigation__link"
+                >Портфолио</a
+              >
+            </li>
+            <li class="navigation__item contactsPage">
+              <a href="" class="navigation__link">Контакты</a>
+            </li>
           </ul>
         </nav>
         <ul class="headContacts">
@@ -52,200 +58,227 @@
       <section class="section">
         <div class="container">
           <h1 class="visually-hidden">Наши работы</h1>
-          <ul class="portfolio_buttons">
-            <li><button type="button">Все</button></li>
-            <li><button type="button">Веб-сайты</button></li>
-            <li><button type="button">Приложения</button></li>
-            <li><button type="button">Дизайн</button></li>
-            <li><button type="button">Маркетинг</button></li>
+          <ul class="portfolioBtn">
+            <li class="portfolioBtn__item">
+              <button type="button" class="portfolioBtn__button">Все</button>
+            </li>
+            <li class="portfolioBtn__item">
+              <button type="button" class="portfolioBtn__button">
+                Веб-сайты
+              </button>
+            </li>
+            <li class="portfolioBtn__item">
+              <button type="button" class="portfolioBtn__button">
+                Приложения
+              </button>
+            </li>
+            <li class="portfolioBtn__item">
+              <button type="button" class="portfolioBtn__button">Дизайн</button>
+            </li>
+            <li class="portfolioBtn__item">
+              <button type="button" class="portfolioBtn__button">
+                Маркетинг
+              </button>
+            </li>
           </ul>
           <ul class="presentation">
-            <li>
-              <a href=""
-                ><div class="pres-about-card">
+            <li class="product">
+              <a href="" class="product__link"
+                ><div class="product__block">
                   <img
+                    class="product__image"
                     src="./images/technokriak.jpg"
                     alt="Ноутбук"
                     width="370"
                     height="294"
                   />
-                  <p class="about-card">
+                  <p class="product__discription">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
                     исчерпывающие сведения о компании или частном лице.
                   </p>
                 </div>
-                <div class="presentation-discription">
-                  <h2>Технокряк</h2>
-                  <p class="presentation-text">Веб-сайт</p>
+                <div class="product__meta">
+                  <h2 class="product__title">Технокряк</h2>
+                  <p class="product__text">Веб-сайт</p>
                 </div>
               </a>
             </li>
-            <li>
-              <a href=""
-                ><div class="pres-about-card">
+            <li class="product">
+              <a href="" class="product__link"
+                ><div class="product__block">
                   <img
+                    class="product__image"
                     src="./images/new_orlean_vs_golden_star.jpg"
                     alt="Баскетбол"
                     width="370"
                     height="294"
                   />
-                  <p class="about-card">
+                  <p class="product__discription">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
                     исчерпывающие сведения о компании или частном лице.
                   </p>
                 </div>
-                <div class="presentation-discription">
-                  <h2>Постер New Orlean vs Golden Star</h2>
-                  <p class="presentation-text">Дизайн</p>
+                <div class="product__meta">
+                  <h2 class="product__title">
+                    Постер New Orlean vs Golden Star
+                  </h2>
+                  <p class="product__text">Дизайн</p>
                 </div>
               </a>
             </li>
-            <li>
-              <a href=""
-                ><div class="pres-about-card">
+            <li class="product">
+              <a href="" class="product__link"
+                ><div class="product__block">
                   <img
+                    class="product__image"
                     src="./images/seafood.jpg"
                     alt="Рыба"
                     width="370"
                     height="294"
                   />
-                  <p class="about-card">
+                  <p class="product__discription">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
                     исчерпывающие сведения о компании или частном лице.
                   </p>
                 </div>
-                <div class="presentation-discription">
-                  <h2>Ресторан Seafood</h2>
-                  <p class="presentation-text">Приложение</p>
+                <div class="product__meta">
+                  <h2 class="product__title">Ресторан Seafood</h2>
+                  <p class="product__text">Приложение</p>
                 </div>
               </a>
             </li>
-            <li>
-              <a href=""
-                ><div class="pres-about-card">
+            <li class="product">
+              <a href="" class="product__link"
+                ><div class="product__block">
                   <img
+                    class="product__image"
                     src="./images/prime.jpg"
                     alt="Наушники"
                     width="370"
                     height="294"
                   />
-                  <p class="about-card">
+                  <p class="product__discription">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
                     исчерпывающие сведения о компании или частном лице.
                   </p>
                 </div>
-                <div class="presentation-discription">
-                  <h2>Проект Prime</h2>
-                  <p class="presentation-text">Маркетинг</p>
+                <div class="product__meta">
+                  <h2 class="product__title">Проект Prime</h2>
+                  <p class="product__text">Маркетинг</p>
                 </div>
               </a>
             </li>
-            <li>
-              <a href=""
-                ><div class="pres-about-card">
+            <li class="product">
+              <a href="" class="product__link"
+                ><div class="product__block">
                   <img
+                    class="product__image"
                     src="./images/boxes.jpg"
                     alt="Коробки"
                     width="370"
                     height="294"
                   />
-                  <p class="about-card">
+                  <p class="product__discription">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
                     исчерпывающие сведения о компании или частном лице.
                   </p>
                 </div>
-                <div class="presentation-discription">
-                  <h2>Проект Boxes</h2>
-                  <p class="presentation-text">Приложение</p>
+                <div class="product__meta">
+                  <h2 class="product__title">Проект Boxes</h2>
+                  <p class="product__text">Приложение</p>
                 </div>
               </a>
             </li>
-            <li>
-              <a href="">
-                <div class="pres-about-card">
+            <li class="product">
+              <a href="" class="product__link">
+                <div class="product__block">
                   <img
+                    class="product__image"
                     src="./images/inspiration_has_no_borders.jpg"
                     alt="Компьютер"
                     width="370"
                     height="294"
                   />
-                  <p class="about-card">
+                  <p class="product__discription">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
                     исчерпывающие сведения о компании или частном лице.
                   </p>
                 </div>
-                <div class="presentation-discription">
-                  <h2>Inspiration has no Borders</h2>
-                  <p class="presentation-text">Веб-сайт</p>
+                <div class="product__meta">
+                  <h2 class="product__title">Inspiration has no Borders</h2>
+                  <p class="product__text">Веб-сайт</p>
                 </div>
               </a>
             </li>
-            <li>
-              <a href=""
-                ><div class="pres-about-card">
+            <li class="product">
+              <a href="" class="product__link"
+                ><div class="product__block">
                   <img
+                    class="product__image"
                     src="./images/limited_edition.jpg"
                     alt="Книга"
                     width="370"
                     height="294"
                   />
-                  <p class="about-card">
+                  <p class="product__discription">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
                     исчерпывающие сведения о компании или частном лице.
                   </p>
                 </div>
-                <div class="presentation-discription">
-                  <h2>Издание Limited Edition</h2>
-                  <p class="presentation-text">Дизайн</p>
+                <div class="product__meta">
+                  <h2 class="product__title">Издание Limited Edition</h2>
+                  <p class="product__text">Дизайн</p>
                 </div>
               </a>
             </li>
-            <li>
-              <a href=""
-                ><div class="pres-about-card">
+            <li class="product">
+              <a href="" class="product__link"
+                ><div class="product__block">
                   <img
+                    class="product__image"
                     src="./images/lab.jpg"
                     alt="Лейбл"
                     width="370"
                     height="294"
                   />
-                  <p class="about-card">
+                  <p class="product__discription">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
                     исчерпывающие сведения о компании или частном лице.
                   </p>
                 </div>
-                <div class="presentation-discription">
-                  <h2>Проект LAB</h2>
-                  <p class="presentation-text">Маркетинг</p>
+                <div class="product__meta">
+                  <h2 class="product__title">Проект LAB</h2>
+                  <p class="product__text">Маркетинг</p>
                 </div>
               </a>
             </li>
-            <li>
-              <a href=""
-                ><div class="pres-about-card">
+            <li class="product">
+              <a href="" class="product__link"
+                ><div class="product__block">
                   <img
+                    class="product__image"
                     src="./images/growing_business.jpg"
                     alt="Ноутбук и руки"
                     width="370"
                     height="294"
                   />
-                  <p class="about-card">
+                  <p class="product__discription">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
                     исчерпывающие сведения о компании или частном лице.
                   </p>
                 </div>
-                <div class="presentation-discription">
-                  <h2>Growing Business</h2>
-                  <p class="presentation-text">Приложение</p>
+                <div class="product__meta">
+                  <h2 class="product__title">Growing Business</h2>
+                  <p class="product__text">Приложение</p>
                 </div>
               </a>
             </li>
@@ -262,13 +295,19 @@
           <address>
             <ul class="footerContacts">
               <li class="footerContacts__item">
-                <a href="" class="footerContacts__link footerContacts__address">г. Киев, пр-т Леси Украинки, 26</a>
+                <a href="" class="footerContacts__link footerContacts__address"
+                  >г. Киев, пр-т Леси Украинки, 26</a
+                >
               </li>
               <li class="footerContacts__item">
-                <a href="mailto:info@example.com" class="footerContacts__link">info@example.com</a>
+                <a href="mailto:info@example.com" class="footerContacts__link"
+                  >info@example.com</a
+                >
               </li>
               <li class="footerContacts__item">
-                <a href="tel:+380991111111" class="footerContacts__link">+38 099 111 11 11</a>
+                <a href="tel:+380991111111" class="footerContacts__link"
+                  >+38 099 111 11 11</a
+                >
               </li>
             </ul>
           </address>

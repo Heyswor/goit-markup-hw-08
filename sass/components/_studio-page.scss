@@ -1,0 +1,260 @@
+/*-----------------------------------------STUDIO-----------------------------------------*/
+
+/*_____________________________________ HERO BLOCK */
+.hero {
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background: var(--second-back-color);
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/hero_back.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
+.hero__title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--text-color);
+  margin-bottom: 30px;
+}
+
+.hero__button {
+  background: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--text-color);
+  padding: 10px 32px 10px 32px;
+  margin: 0 auto;
+  display: block;
+}
+
+/*_____________________________________ SKILLS BLOCK */
+
+.skills__list {
+  display: inline-flex;
+}
+
+.skills__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.skills__icon {
+  width: 270px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f5f4fa;
+}
+
+.skills__header {
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  margin-top: 30px;
+}
+
+.skills__text {
+  margin-top: 10px;
+  line-height: 1.71;
+  color: var(--discription-color);
+  max-width: 270px;
+}
+
+/*_____________________________________ WORKS BLOCK */
+
+.works {
+  padding-top: 0px;
+}
+
+.works__title {
+  font-size: 36px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.works__list {
+  display: flex;
+}
+
+.works__item {
+  position: relative;
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.works__image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.works__text {
+  font-weight: 700;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+  background: rgba(47, 48, 58, 0.8);
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+}
+
+/*_____________________________________ TEAM BLOCK */
+
+.team {
+  background: #f5f4fa;
+}
+
+.team__title {
+  font-size: 36px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.team__list {
+  display: inline-flex;
+}
+
+.team__photo {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.team__item {
+  background: var(--main-back-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.team__member {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-top: 30px;
+}
+
+.team__text {
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+  color: var(--discription-color);
+  margin-top: 10px;
+  margin-bottom: 16px;
+}
+
+/*memberLinks BLOCK */
+
+.memberLinks {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.memberLinks__item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.memberLinks__link {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: #afb1b8;
+
+  &:hover,
+  &:focus {
+    background-color: #2196f3;
+    color: #ffffff;
+    border-radius: 50%;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+.memberLinks__icon {
+  fill: currentColor;
+}
+
+/*_____________________________________ CLIETNS BLOCK */
+
+.clients__title {
+  font-size: 36px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.clients__list {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
+.clients__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.clients__link {
+  display: flex;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  fill: #afb1b8;
+  color: #2196f3;
+
+  &:hover,
+  &:focus {
+    border: 1px solid currentColor;
+    border-radius: 4px;
+    fill: currentColor;
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}

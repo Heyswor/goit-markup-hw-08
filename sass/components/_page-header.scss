@@ -1,0 +1,128 @@
+/*-----------------------------------------HEADER-----------------------------------------*/
+/*_____________________________________ header BLOCK */
+
+.header {
+  display: flex;
+  border-bottom: 1px solid #ececec;
+  & > div {
+    display: flex;
+  }
+}
+
+/*_____________________________________ navigation BLOCK */
+
+.navigation {
+  display: flex;
+}
+
+.navigation__logo {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--accent-color);
+  text-decoration: none;
+  padding-top: 24px;
+  padding-bottom: 25px;
+  margin-right: 93px;
+  display: inline-flex;
+}
+
+.navigation__logo2 {
+  color: var(--second-logo-color);
+}
+
+.navigation__list {
+  display: flex;
+}
+
+.navigation__item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.navigation__link {
+  text-decoration: none;
+  color: var(--link-color);
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  display: block;
+  position: relative;
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+.active-studio {
+  .studioPage & {
+    color: var(--accent-color);
+  }
+  &::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    content: "";
+    background: var(--accent-color);
+    height: 4px;
+    width: 100%;
+    border-radius: 2px;
+  }
+}
+
+.active-portfolio {
+  .portfolioPage & {
+    color: var(--accent-color);
+  }
+  &::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    content: "";
+    background: var(--accent-color);
+    border-radius: 2px;
+    height: 4px;
+    width: 100%;
+  }
+}
+
+
+/*_____________________________________ headContacts BLOCK */
+
+.headContacts {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.headContacts__item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.headContacts__link {
+  text-decoration: none;
+  color: var(--address-color);
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+.headContacts__icon {
+  margin-right: 10px;
+  fill: currentColor;
+}
