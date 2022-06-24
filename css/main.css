@@ -539,7 +539,7 @@ template {
 @media screen and (max-width: 767px) {
   .navigation__menu {
     pointer-events: none;
-    position: absolute;
+    position: fixed;
     -webkit-transform: translateY(-100%);
             transform: translateY(-100%);
     visibility: hidden;
